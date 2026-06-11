@@ -148,7 +148,6 @@ GEMINI_API_KEY=your_gemini_api_key
 
 PINECONE_API_KEY=your_pinecone_api_key
 
-PINECONE_INDEX=your_index_name
 ```
 
 ---
