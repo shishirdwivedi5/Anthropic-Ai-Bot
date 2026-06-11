@@ -14,7 +14,7 @@ app.use(cors({
   origin: "http://localhost:5173",
   credentials: true,
 }));
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 const userRoutes = require("./routes/user.route");
 app.use("/auth", userRoutes);
@@ -23,7 +23,7 @@ const chatRoute = require("./routes/chat.route");
 app.use("/chat", chatRoute);
 
 app.get("*name", (req,res)=>{
-  res.sendFile(path.join(__dirname , '../public/index.html'));
+  res.sendFile(path.join(__dirname , 'public/index.html'));
 })
 
 
